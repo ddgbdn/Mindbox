@@ -1,9 +1,8 @@
 ﻿using Geometry.Contracts;
-using Geometry.FigureArgs;
 
 namespace Geometry.Figures
 {
-    internal readonly struct Circle : ICircle
+    public readonly struct Circle : IShape
     {
         public double Radius { get; init; }
 
@@ -13,10 +12,6 @@ namespace Geometry.Figures
         }
 
         public Circle() : this(1)
-        {
-        }
-
-        public Circle(CircleArgs args) : this(args.Radius)
         {
         }
 

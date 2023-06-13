@@ -1,9 +1,8 @@
 ﻿using Geometry.Contracts;
-using Geometry.FigureArgs;
 
 namespace Geometry.Figures
 {
-    internal readonly struct Triangle : ITriangle
+    public readonly struct Triangle : IShape
     {
         public double SideA { get; init; }
         public double SideB { get; init; }
@@ -26,10 +25,6 @@ namespace Geometry.Figures
         }
 
         public Triangle() : this(1, 1, 1)
-        {
-        }
-
-        public Triangle(TriangleArgs args) : this(args.SideA, args.SideB, args.SideC)
         {
         }
 

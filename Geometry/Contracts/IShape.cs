@@ -1,6 +1,6 @@
 ﻿namespace Geometry.Contracts
 {
-    public interface IFigure
+    public interface IShape
     {
         public double Area { get; }
     }
