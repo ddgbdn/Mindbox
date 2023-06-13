@@ -8,5 +8,5 @@ using System.Threading.Tasks;
 
 namespace Geometry.FigureArgs
 {
-    public record TriangleArgs(double SideA, double SideB, double SideC) : IFigureArgs<Triangle>;
+    internal record TriangleArgs(double SideA, double SideB, double SideC) : IFigureArgs<ITriangle>;
 }

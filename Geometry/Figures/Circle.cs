@@ -3,7 +3,7 @@ using Geometry.FigureArgs;
 
 namespace Geometry.Figures
 {
-    public readonly struct Circle : IFigure
+    internal readonly struct Circle : ICircle
     {
         public double Radius { get; init; }
 

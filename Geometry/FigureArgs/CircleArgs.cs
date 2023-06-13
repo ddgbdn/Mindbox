@@ -8,5 +8,5 @@ using System.Threading.Tasks;
 
 namespace Geometry.FigureArgs
 {
-    public record CircleArgs(double Radius) : IFigureArgs<Circle>;
+    internal record CircleArgs(double Radius) : IFigureArgs<ICircle>;
 }

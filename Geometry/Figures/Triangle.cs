@@ -3,7 +3,7 @@ using Geometry.FigureArgs;
 
 namespace Geometry.Figures
 {
-    public readonly struct Triangle : IFigure
+    internal readonly struct Triangle : ITriangle
     {
         public double SideA { get; init; }
         public double SideB { get; init; }
