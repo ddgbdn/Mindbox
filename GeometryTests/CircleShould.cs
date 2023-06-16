@@ -14,7 +14,7 @@ namespace Tests
         {
             var actualArea = _checker.GetArea(raduis);
 
-            Assert.That(Math.Abs(expectedArea - actualArea), Is.LessThan(1e-5));
+            Assert.That(actualArea, Is.EqualTo(expectedArea).Within(1e-5));
         }
 
 

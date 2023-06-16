@@ -15,7 +15,7 @@ namespace Tests
         {
             var actualArea = _checker.GetArea(sideA, sideB, sideC);
 
-            Assert.That(Math.Abs(expectedArea - actualArea), Is.LessThan(1e-5));
+            Assert.That(actualArea, Is.EqualTo(expectedArea).Within(1e-5));
         }
 
         [TestCase(6, 2, 3)]
